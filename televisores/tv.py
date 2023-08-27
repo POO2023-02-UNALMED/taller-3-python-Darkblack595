@@ -51,16 +51,13 @@ class TV:
         TV.numTV = numTV
 
     def canalUp(self):
-        if self.estado == True:
-            self.setCanal(self.canal + 1)
+        self.setCanal(self.getCanal() + 1)
     def canalDown(self):
-        if self.estado == True:
-            self.setCanal(self.canal - 1)
+        self.setCanal(self.getCanal() - 1)
 
     def volumenUp(self):
         if self.estado == True:
-            self.setVolumen(self.volumen + 1)
+            self.setVolumen(self.getVolumen() + 1)
     def volumenDown(self):
         if self.estado == True:
-            self.setVolumen(self.volumen - 1)
-    
+            self.setVolumen(self.getVolumen() - 1)
