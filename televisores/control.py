@@ -1,7 +1,7 @@
 from televisores.tv import TV
 class Control:
-    def __init__(self, tv):
-        TV.tv = self.tv
+    def __init__(self):
+        self.tv = TV()
     
     def turnOn(self):
             self.tv.turnOn()
