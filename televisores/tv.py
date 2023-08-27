@@ -7,7 +7,7 @@ class TV:
         self._volumen = 1
         self._precio = 500
         self._control = None
-        numTV += 1
+        TV.numTV += 1
 
     def turnOn(self):
         self.estado = True
@@ -52,15 +52,15 @@ class TV:
 
     def canalUp(self):
         if self.estado == True:
-            self.canal = self.setCanal(self.getCanal()+1)
+            self.canal = self.canal + 1
     def canalDown(self):
         if self.estado == True:
-            self.canal = self.setCanal(self.getCanal()-1)
+            self.canal = self.canal + 1
 
     def volumenUp(self):
         if self.estado == True:
-            self.volumen = self.setVolumen(self.getVolumen()+1)
+            self.volumen = self.volumen + 1
     def volumenDown(self):
         if self.estado == True:
-            self.volumen = self.setVolumen(self.getVolumen()-1)
+            self.volumen = self.volumen + 1
     

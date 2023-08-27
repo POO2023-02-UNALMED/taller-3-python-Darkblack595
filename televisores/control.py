@@ -1,28 +1,35 @@
-from tv import TV
 class Control:
     def _init_(self):
         self.tv = None
     
     def turnOn(self):
-        TV.turnOn()
+        if self.tv is not None:
+            self.tv.turnOn()
     def turnOff(self):
-        TV.turnOff()
+        if self.tv is not None:
+            self.tv.turnOff()
     
     def canalUp(self):
-        TV.canalUp()
+        if self.tv is not None:
+            self.tv.canalUp()
     def canalDown(self):
-        TV.canalDown()
+        if self.tv is not None:
+            self.tv.canalDown()
     
     def volumeDown(self):
-        TV.canalDown()
-    def volumeUp(self):
-        TV.canalUp()
+        if self.tv is not None:
+            self.tv.canalDown()
+    def volumeUp(self):}
+        if self.tv is not None:
+            self.tv.volumenUp()
     
-    def setCanal(self):
-        TV.setCanal()
-    def setVolumen(self):
-        TV.setVolumen()
+    def setCanal(self,canal):
+        if self.tv is not None:
+            self.tv.setCanal()
+    def setVolumen(self, volumen):
+        if self.tv is not None:
+            self.tv.setVolumen()
     
     def enlazar(self, tv):
         self.tv = tv
-        TV.setControl(self)
+        self.tv.setControl(self)
