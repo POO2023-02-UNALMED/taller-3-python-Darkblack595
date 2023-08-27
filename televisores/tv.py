@@ -53,7 +53,7 @@ class TV:
     def canalUp(self):
         self.setCanal(self.getCanal() + 1)
     def canalDown(self):
-        self.setCanal(self.getCanal() + 1)
+        self.setCanal(self.getCanal() - 1)
 
     def volumenUp(self):
         self.setVolumen(self.getVolumen() + 1)
