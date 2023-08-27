@@ -48,7 +48,7 @@ class TV:
     def getNumTV (cls):
         return cls.numTV
     def setNumTV(cls,numTV):
-        cls.estado = numTV
+        cls.numTV = numTV
 
     def canalUp(self):
         if self.estado == True:
