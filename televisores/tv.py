@@ -45,10 +45,10 @@ class TV:
         return self.estado    
    
     @classmethod
-    def getNumTV ():
-        return TV.numTV
-    def setNumTV(numTV):
-        TV.numTV = numTV
+    def getNumTV (cls):
+        return cls.numTV
+    def setNumTV(cls,numTV):
+        cls.numTV = numTV
 
     def canalUp(self):
         if self.estado == True:
