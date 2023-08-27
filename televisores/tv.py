@@ -22,13 +22,13 @@ class TV:
     def getVolumen (self):
         return self.volumen
     def setVolumen(self, volumen):
-        if self.estado == True and self.volumen >=0 and self.volumen <= 7:
+        if self.estado and self.volumen>=0 and self.volumen<= 7:
             self.volumen = volumen
     
     def getCanal (self):
         return self.canal
     def setCanal(self, canal):
-        if self.estado == True and self.canal >=1 and self.canal <= 120:
+        if self.estado and self.canal>=1 and self.canal<= 120:
             self.canal = canal
     
     def getPrecio (self):
@@ -47,8 +47,9 @@ class TV:
     @classmethod
     def getNumTV (cls):
         return cls.numTV
-    def setNumTV(numTV):
-        TV.numTV = numTV
+    @classmethod
+    def setNumTV(cls, numTV):
+        cls.numTV = numTV
 
     def canalUp(self):
         self.setCanal(self.getCanal() + 1)
